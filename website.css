@@ -1,0 +1,416 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#EF8B36, #FFFFFF) fixed;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.gradient{
+  width: 1900px;
+  max-width: 110%;
+  height: 750px;
+  background: #EF8B36;
+  box-shadow: 0 -350px 100px -120px white inset;
+  animation: background 8s infinite alternate;
+}
+
+@keyframes background {
+  50%{
+    background: #FF7442;
+    box-shadow: 0 -350px 100px -100px white inset;
+  }
+}
+.fox{
+  position: absolute;
+  user-select: none;
+  width: 350px;
+  height: 175px;
+  left: -40px;
+  top: 1px;
+}
+.tail{
+  position: absolute;
+  width: 1280px;
+  height: 76px;
+  top: 62px;
+  left: 170px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+}
+.text{
+  color: #FF7F00;
+  user-select: none;
+  margin-left: 18px;
+  margin-top: 5px;
+  font-size: 58px;
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.3em;
+}
+.text2{
+  color: white;
+  user-select: none;
+  margin-left: 20px;
+  margin-top: -66px;
+  font-size: 58px;
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.3em;
+}
+
+.QandA{
+  position: absolute;
+  user-select: none;
+  width: 90px;
+  height: 52px;
+  top: 75px;
+  left: 1350px;
+  z-index: 1;
+  background: url(png);
+}
+.window1{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 240px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  left: 160px;
+}
+
+.window1:hover::after {
+content: attr(data-title); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+left: 0;
+right: 0;
+height: 25px;
+bottom: 0px; /* Положение подсказки */
+z-index: 1; /* Отображаем подсказку поверх других элементов */
+background: rgba(255,255,255,0.1); /* Полупрозрачный цвет фона */
+color: #fff; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+font-family: Arial, sans-serif;; /* Гарнитура шрифта */
+font-size: 22px; /* Размер текста подсказки */
+padding: 5px 10px; /* Поля */
+border-radius: 0px 0px 20px 20px; /* Параметры рамки */
+}
+
+.window2{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 240px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  left: 620px;
+}
+.window2:hover::after {
+content: attr(data-title); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+left: 0;
+right: 0;
+height: 25px;
+bottom: 0px; /* Положение подсказки */
+z-index: 1; /* Отображаем подсказку поверх других элементов */
+background: rgba(255,255,255,0.1); /* Полупрозрачный цвет фона */
+color: #fff; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+font-family: sans-serif; /* Гарнитура шрифта */
+font-size: 22px; /* Размер текста подсказки */
+padding: 5px 10px; /* Поля */
+border-radius: 0px 0px 20px 20px; /* Параметры рамки */
+}
+.window3{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 240px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  left: 1080px;
+}
+.window3:hover::after {
+content: attr(data-title); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+left: 0;
+right: 0;
+height: 25px;
+bottom: 0px; /* Положение подсказки */
+z-index: 1; /* Отображаем подсказку поверх других элементов */
+background: rgba(255,255,255,0.1); /* Полупрозрачный цвет фона */
+color: #fff; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+font-family: sans-serif; /* Гарнитура шрифта */
+font-size: 22px; /* Размер текста подсказки */
+padding: 5px 10px; /* Поля */
+border-radius: 0px 0px 20px 20px; /* Параметры рамки */
+}
+.window4{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 490px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  left: 860px;
+}
+.window4:hover::after {
+content: attr(data-title); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+left: 0;
+right: 0;
+height: 25px;
+bottom: 0px; /* Положение подсказки */
+z-index: 1; /* Отображаем подсказку поверх других элементов */
+background: rgba(255,255,255,0.1); /* Полупрозрачный цвет фона */
+color: #fff; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+font-family: Arial, sans-serif;; /* Гарнитура шрифта */
+font-size: 22px; /* Размер текста подсказки */
+padding: 5px 10px; /* Поля */
+border-radius: 0px 0px 20px 20px; /* Параметры рамки */
+}
+.window5{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 490px;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  left: 375px;
+}
+.window5:hover::after {
+content: attr(data-title); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+left: 0;
+right: 0;
+height: 25px;
+bottom: 0px; /* Положение подсказки */
+z-index: 1; /* Отображаем подсказку поверх других элементов */
+background: rgba(255,255,255,0.1); /* Полупрозрачный цвет фона */
+color: #fff; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+font-family: sans-serif; /* Гарнитура шрифта */
+font-size: 22px; /* Размер текста подсказки */
+padding: 5px 10px; /* Поля */
+border-radius: 0px 0px 20px 20px; /* Параметры рамки */
+}
+.moneta{
+  position: absolute;
+  user-select: none;
+  width: 270px;
+  height: 135px;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+.flare{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50px;
+  left: 210px;
+  background-color: white;
+  z-index: 1;
+  transform: skewX(-45deg);
+  animation-name: flare_;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+@keyframes flare_{
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 50;
+  }
+  50%{
+    opacity: 100;
+  }
+  75%{
+    opacity: 50;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.heart1{
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 155px;
+  top: 10px;
+  left: 80px;
+  z-index: 1;
+  transform: rotate(-45deg);
+  border-radius: 50px 50px 50px 0;
+}
+.heart2{
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 155px;
+  top: 10px;
+  left: 120px;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-radius: 50px 50px 50px 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(#FFFFFF, #EF8B36);
+}
+
+.numbers {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated-word {
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 70px;
+  margin-left: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  color: rgba(255, 116, 66, 1);
+}
+
+.numbers4 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated-word4 {
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 50px;
+  margin-left: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word4:hover {
+  color: rgba(255, 116, 66, 1);
+}
+.choice1{
+  color: white;
+  user-select: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 70px;
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.2em;
+}
+.choice2{
+  color: white;
+  user-select: none;
+  margin-left: 200px;
+  margin-top: 5px;
+  font-size: 70px;
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.2em;
+}
+
+.copyright{
+  color: black;
+  text-align: center;
+  margin-top: 720px;
+  font-size: 14px;
+  font-family: Bernard MT Condensed;
+  letter-spacing: 0.3em;
+}
+
+
+
+.center {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center__text {
+  margin: auto;
+  font-family: Bernard MT Condensed;
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten;
+
+  &:before,
+  &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: black;
+      clip: rect(0, 0, 0, 0);
+  }
+
+  &:before {
+      left: -1px;
+      text-shadow: 1px 0 rgba(red,0.7);
+  }
+
+  &:after {
+      left: 1px;
+      text-shadow: -1px 0 rgba(blue,0.7);
+  }
+
+  &:hover {
+    &:before {
+      text-shadow: 4px 0 rgba(red,0.7);
+      animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+    }
+    &:after {
+      text-shadow: -5px 0 rgba(blue,0.7);
+      animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+    }
+  }
+}
+
+@keyframes glitch-loop-1 {
+  0% { clip: rect(36px, 9999px, 9px, 0) }
+  25% { clip: rect(25px, 9999px, 99px, 0) }
+  50% { clip: rect(50px, 9999px, 102px, 0) }
+  75% { clip: rect(30px, 9999px, 92px, 0) }
+  100% { clip: rect(91px, 9999px, 98px, 0) }
+}
+
+@keyframes glitch-loop-2 {
+  0% { top: -1px; left: 1px; clip: rect(65px, 9999px, 119px, 0) }
+  25% { top: -6px; left: 4px; clip: rect(79px, 9999px, 19px, 0) }
+  50% { top: -3px; left: 2px; clip: rect(68px, 9999px, 11px, 0) }
+  75% { top: 0px; left: -4px; clip: rect(95px, 9999px, 53px, 0) }
+  100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0) }
+}
+
+a{
+  text-decoration: none;
+}
